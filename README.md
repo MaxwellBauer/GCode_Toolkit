@@ -119,7 +119,7 @@ Here is a demo of the G-code visualization:
    end
 
    % Generate G-Code for the allCoords array
-   GenerateGCode(allCoords, [0, 0, 0], 'alternating_zigzag_pattern.txt');
+   GenerateGCode(allCoords, [0, 0, 0], 'generatedGcode.txt');
 
    % Visualize the generated G-code
    ReadAndPlotGCode('generatedGcode.txt', 'toolpath'); % toolpath is the video filename

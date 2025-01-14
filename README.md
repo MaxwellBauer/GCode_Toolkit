@@ -7,7 +7,9 @@ This toolkit was ultimately created to generate G-code paths for the ANSYS Mecha
 
 Here is a demo of the G-code visualization:
 
-![alternating_zigzag_video-ezgif com-crop](https://github.com/user-attachments/assets/e68c0992-0fe3-4850-af97-722adfc130b8)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/d632cc56-9b1c-47bb-97ec-81db8348196a" alt="Toolpath Visualization" width="800"/>
+</div>
 
 ## Features
 

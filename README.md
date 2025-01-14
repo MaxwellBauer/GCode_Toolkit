@@ -71,7 +71,7 @@ Here is a demo of the G-code visualization:
    ```matlab
    % Generate a zigzag path
    [layerCoords, startLineIndex] = CreateLayerCoords(...
-   1, 'zigzag', 6, 25, [0, 0, 0], [1, 0, 0], [0, -1, 0]);
+    1, 'zigzag', 6, 25, [0, 0, 0], [1, 0, 0], [0, -1, 0]);
    GenerateGCode(layerCoords, [0, 0, 0], 'generatedGcode.txt');
 
    % Visualize the generated G-code
@@ -104,12 +104,12 @@ Here is a demo of the G-code visualization:
            % Odd layer
            % Generate coordinates for this layer, main and line axes in normal input location:
            [layerCoords, startLineIndex] = CreateLayerCoords(...
-           startLineIndex, 'zigzag', beamWidth, sideLength, originCoords, mainAxis, lineAxis);
+            startLineIndex, 'zigzag', beamWidth, sideLength, originCoords, mainAxis, lineAxis);
        else
            % Even Line
            % Generate coordinates for this layer, main and line axes input locations swapped:
            [layerCoords, startLineIndex] = CreateLayerCoords(...
-           startLineIndex, 'zigzag', beamWidth, sideLength, originCoords, lineAxis, mainAxis);
+            startLineIndex, 'zigzag', beamWidth, sideLength, originCoords, lineAxis, mainAxis);
        end
    
        % Append the new layer's coordinates to the existing coord array

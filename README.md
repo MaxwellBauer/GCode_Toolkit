@@ -70,7 +70,8 @@ Here is a demo of the G-code visualization:
     **Example: Combine Generation and Visualization for Single Layer ZigZag**
    ```matlab
    % Generate a zigzag path
-   [layerCoords, startLineIndex] = CreateLayerCoords(1, 'zigzag', 6, 25, [0, 0, 0], [1, 0, 0], [0, -1, 0]);
+   [layerCoords, startLineIndex] = CreateLayerCoords(...
+   1, 'zigzag', 6, 25, [0, 0, 0], [1, 0, 0], [0, -1, 0]);
    GenerateGCode(layerCoords, [0, 0, 0], 'generatedGcode.txt');
 
    % Visualize the generated G-code

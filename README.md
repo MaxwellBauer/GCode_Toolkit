@@ -15,7 +15,7 @@ Here is a demo of the G-code visualization:
 
 ### G-code Generation
 - Create G-code files with layer-specific custom toolpaths:
-  - **Zigzag**, **ratchet**, or other custom tool patterns.
+  - **Zigzag**, **raster**, or other custom tool patterns.
   - Configurable layer height, beam width, and path direction.
   - Supports origin shifts and multi-layer structures.
 - Modular and flexible MATLAB functions for generating combinatiosn of layer-specific toolpaths.

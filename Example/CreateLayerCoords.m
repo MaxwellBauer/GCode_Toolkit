@@ -4,7 +4,7 @@ function [layerCoords, startLineIndex] = CreateLayerCoords(startLineIndex, patte
 %
 %INPUTS:
 %   startLineIndex   : The first lineIndex to use (to build off previous lines), 0 if first line.
-%   patternType      : A string, e.g. 'zigzag' or 'ratchet'
+%   patternType      : A string, e.g. 'zigzag' or 'raster'
 %   beamWidth        : Width of each weld line
 %   sideLength       : The sidelength of the sample's square cross-section.
 %   originCoord      : The Z-level at which this layer is printed.
@@ -92,8 +92,8 @@ switch patternType
                 ];
         end
 
-    case 'ratchet'
-        % the ratchet pattern involves consecutive lines proceeding in the
+    case 'raster'
+        % the raster pattern involves consecutive lines proceeding in the
         % same direction. Consecutive lines will be offset by the beamWidth.
         nLines = sideLength/beamWidth;
 
